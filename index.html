@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/16568bc9df.js" crossorigin="anonymous"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#3e9694',
+          }
+        }
+      }
+    }
+  </script>
+  <title></title>
+</head>
+
+<body class="bg-gray-300 h-auto">
+  <header>
+    <nav class="bg-gray-800 fixed w-screen">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="flex space-x-4">
+            <div>
+              <a href="#" class="flex items-center py-5 px-2 text-blue-500">
+                <img src="./src/verreIcon.png" alt="iconVerre" class="h-8 w-8 mr-2">
+                <span class="font-bold text-clifford">Verre Bleu</span>
+              </a>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-1">
+              <a href="#Inicio" class="py-5 px-3 text-gray-400 hover:text-gray-200">Inicio</a>
+              <a href="#Nosotros" class="py-5 px-3 text-gray-400 hover:text-gray-200">Nosotros</a>
+            </div>
+          </div>
+
+          <div class="hidden md:flex items-center space-x-1">
+            <a href="#Menu"
+              class="py-2 px-3 bg-gray-900 hover:bg-clifford text-gray-400 hover:text-black rounded">Menu</a>
+          </div>
+
+          <div class="md:hidden flex items-center text-clifford">
+            <button class="mobile-menu-button">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-menu hidden md:hidden text-center">
+        <a href="#Inicio" class="block py-2 px-4 text-lg text-clifford">Inicio</a>
+        <a href="#Nosotros" class="block py-2 px-4 text-lg text-clifford">Nosotros</a>
+      </div>
+    </nav>
+  </header>
+  <main class="px-2 pt-36 pb-10 bg-gray-300 md:px-0" id="Inicio">
+    <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
+      <div class="flex flex-wrap items-center sm:-mx-3">
+        <div class="w-full md:w-1/2 md:px-3">
+          <div
+            class="w-full pb-6 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0">
+            <h1
+              class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
+              <span class="block xl:inline">Pasa un momento unico en</span>
+              <span class="block text-clifford xl:inline">Verre Bleu!</span>
+            </h1>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2">
+          <div class="w-full h-auto overflow-hidden rounded-md shadow-xl sm:rounded-xl">
+            <img src="./src/heroBar-2.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <h3 class="text-center text-6xl mb-5 mt-10">
+    <span class="text-clifford" id="Nosotros">Nosotros</span>
+  </h3>
+
+  <article class="sm:flex justify-around align-center grid place-items-center">
+
+    <div
+      class="max-w-lg bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mb-10">
+      <a href="#">
+        <img class="rounded-t-lg" src="./src/Chef1.jpg" alt="">
+      </a>
+      <div class="p-5">
+        <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Chef 1-Name</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Info chef-1</p>
+      </div>
+    </div>
+
+    <div
+      class="max-w-lg mb-10 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+      <a href="#">
+        <img class="rounded-t-lg" src="./src/Chef2.jpg" alt="">
+      </a>
+      <div class="p-5">
+        <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Chef 2-Name</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Info chef-2</p>
+      </div>
+    </div>
+  </article>
+
+  <h3 class="text-center text-6xl mb-5 mt-10">
+    <span class="text-clifford" id="Menu">Menu</span>
+  </h3>
+
+  <section class="w-screen text-lg grid place-items-center h-auto mt-10">
+    <div class="relative rounded-xl overflow-auto">
+      <div class="shadow-sm overflow-hidden my-8">
+        <table class="border-collapse table-auto w-full text-sm" style="width: 80vw;">
+          <thead>
+            <tr class="bg-gray-800">
+              <th
+                class="border-b dark:border-slate-600 font-medium p-4 pl-8 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left"
+                style="padding-top: 10px!important;">Plato</th>
+              <th
+                class="border-b dark:border-slate-600 font-medium p-4 pr-8 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left">
+                Precio</th>
+            </tr>
+          </thead>
+          <tbody class="dark:bg-slate-800">
+            <tr>
+              <td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">
+                Plato</td>
+              <td class="border-b border-slate-100 dark:border-slate-700 p-4 pr-8 text-slate-500 dark:text-slate-400">
+                $2000</td>
+            </tr>
+            <tr>
+              <td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">
+                Plato</td>
+              <td class="border-b border-slate-100 dark:border-slate-700 p-4 pr-8 text-slate-500 dark:text-slate-400">
+                $2000</td>
+            </tr>
+            <tr>
+              <td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">
+                Plato</td>
+              <td class="border-b border-slate-100 dark:border-slate-700 p-4 pr-8 text-slate-500 dark:text-slate-400">
+                $2000</td>
+            </tr>
+            <tr>
+              <td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">
+                Plato</td>
+              <td class="border-b border-slate-100 dark:border-slate-700 p-4 pr-8 text-slate-500 dark:text-slate-400">
+                $2000</td>
+            </tr>
+            <tr>
+              <td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">
+                Plato</td>
+              <td class="border-b border-slate-100 dark:border-slate-700 p-4 pr-8 text-slate-500 dark:text-slate-400">
+                $2000</td>
+            </tr>
+            <tr>
+              <td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">
+                Plato</td>
+              <td class="border-b border-slate-100 dark:border-slate-700 p-4 pr-8 text-slate-500 dark:text-slate-400">
+                $2000</td>
+            </tr>
+            <tr>
+              <td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">
+                Plato</td>
+              <td class="border-b border-slate-100 dark:border-slate-700 p-4 pr-8 text-slate-500 dark:text-slate-400">
+                $2000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="script.js"></script>
+
+</html>
