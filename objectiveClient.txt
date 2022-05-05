@@ -1,2 +1,5 @@
 El cliente objetivo de una pagina similar a esta es un publico adulto que busque una experiencia diferente a las tradicionales de la ciudad.
 Paleta de colores #3e9694 #1f2937 #d1d5db
+
+Decidi realizar la pagina con tailwind a modo de aprendizaje, el objetivo seria aplicar esta libreria en conjunto con react
+para la entrega final.
