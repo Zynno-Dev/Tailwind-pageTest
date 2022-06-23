@@ -19,12 +19,13 @@
       }
     }
   </script>
-  <title></title>
+  <link rel="icon" href="./src/verreIcon.png" />
+  <title>VerreBleu</title>
 </head>
 
 <body class="bg-gray-300 h-auto">
   <header>
-    <nav class="bg-gray-800 fixed w-screen">
+    <nav class="bg-gray-800 fixed w-screen z-10">
       <div class="max-w-6xl mx-auto px-4">
         <div class="flex justify-between">
           <div class="flex space-x-4">
@@ -38,6 +39,7 @@
             <div class="hidden md:flex items-center space-x-1">
               <a href="#Inicio" class="py-5 px-3 text-gray-400 hover:text-gray-200">Inicio</a>
               <a href="#Nosotros" class="py-5 px-3 text-gray-400 hover:text-gray-200">Nosotros</a>
+              <a href="#formulario" class="py-5 px-3 text-gray-400 hover:text-gray-200">Formulario</a>
             </div>
           </div>
 
@@ -61,6 +63,7 @@
         <a href="#Inicio" class="block py-2 px-4 text-lg text-clifford">Inicio</a>
         <a href="#Nosotros" class="block py-2 px-4 text-lg text-clifford">Nosotros</a>
         <a href="#menutable" class="block py-2 px-4 text-lg text-clifford">Menu</a>
+        <a href="#formulario" class="block py-2 px-4 text-lg text-clifford">Formulario</a>
       </div>
     </nav>
   </header>
@@ -95,26 +98,26 @@
     <div
       class="max-w-lg bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mb-10">
       <a href="#">
-        <img class="rounded-t-lg" style="height: 600px;" src="./src/Chef1.jpg" alt="">
+        <img class="rounded-t-lg w-full" style="height: 800px;" src="./src/Chef1.jpg" alt="">
       </a>
-      <div class="p-5">
+      <div class="p-5 h-72">
         <a href="#">
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Nacho Chizzini</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Chef frances..</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">El chef Chizzini es un chef francés que vive en Argentina en el restaurante Verrebleu, es uno de los mejores chef del mundo. Entre sus especialidades están el bistec con trufas y quesos extraños, así como los deliciosos helados</p>
       </div>
     </div>
 
     <div
       class="max-w-lg mb-10 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
-        <img class="rounded-t-lg" style="height: 600px;" src="./src/Chef2.jpg" alt="">
+        <img class="rounded-t-lg w-full" style="height: 800px;" src="./src/Chef2.jpg" alt="">
       </a>
-      <div class="p-5">
+      <div class="p-5 h-72">
         <a href="#">
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Agustin Arancibia</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Chef italiano..</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">El chef Arancibia es un cocinero argentino nacionalizado en una italiano. Ha dedicado su carrera a la profesión de las artes culinarias y en la cocina desde muy joven. Comenzó sus estudios en el Instituto de Gastronomía y Hotelería de la Universidad de La Plata, donde obtuvo su título en 1999. El chef Arancibia decidió entonces ampliar sus estudios en el extranjero, donde vivió en Italia durante dos años, asistiendo a clases especializadas de cocina en el Cordon Bleu de Florencia durante este tiempo.</p>
       </div>
     </div>
   </article>
@@ -123,7 +126,7 @@
     <span class="text-clifford" id="Menu">Menu</span>
   </h3>
 
-  <section id="menutable" class="w-screen text-lg grid place-items-center h-auto mt-10">
+  <section id="menutable" class="w-screen text-lg grid place-items-center h-auto mt-10 z-0">
     <div class="relative rounded-xl overflow-auto">
       <div class="shadow-sm overflow-hidden my-8">
         <table class="border-collapse table-auto w-full text-sm" style="width: 80vw;">
@@ -134,7 +137,7 @@
                 style="padding-top: 10px!important;">Plato</th>
               <th
                 class="border-b dark:border-slate-600 font-medium p-4 pr-8 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left">
-                La quiche Lorraine</th>
+                Precios</th>
             </tr>
           </thead>
           <tbody class="dark:bg-slate-800">
@@ -235,7 +238,7 @@
         </div>
       </div>
     </div>
-      <button type="submit" class="text-white mt-10 bg-clifford hover:bg-clifford focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-clifford dark:hover:bg-clifford dark:focus:ring-clifford ml-1/2">Enviar</button>
+      <button type="submit" class="text-white mb-20 mt-10 bg-clifford hover:bg-clifford focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-clifford dark:hover:bg-clifford dark:focus:ring-clifford ml-1/2">Enviar</button>
     </form>
   </section>
   <section id="footer">
@@ -247,13 +250,13 @@
       </a>
       <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
           <li>
-              <a href="#inicio" class="mr-4 hover:underline md:mr-6 ">Inicio</a>
+              <a href="#Inicio" class="mr-4 hover:underline md:mr-6 ">Inicio</a>
           </li>
           <li>
-              <a href="#nosotros" class="mr-4 hover:underline md:mr-6">Nosotros</a>
+              <a href="#Nosotros" class="mr-4 hover:underline md:mr-6">Nosotros</a>
           </li>
           <li>
-              <a href="#menu" class="mr-4 hover:underline md:mr-6 ">Menu</a>
+              <a href="#menutable" class="mr-4 hover:underline md:mr-6 ">Menu</a>
           </li>
           <li>
               <a href="#formulario" class="hover:underline">Formulario</a>
