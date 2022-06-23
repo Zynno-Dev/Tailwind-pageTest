@@ -7,3 +7,8 @@ btn.addEventListener("click", () => {
   menu.classList.toggle("hidden");
 });
 
+let toInject= document.getElementById("setYear")
+
+let year = new Date().getFullYear();
+
+toInject.innerHTML = year + " ";

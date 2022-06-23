@@ -5,3 +5,8 @@
 html {
     scroll-behavior: smooth;
   }
+
+form {
+    display:block;
+    margin:auto;
+}

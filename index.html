@@ -185,6 +185,87 @@
       </div>
     </div>
   </section>
+  <section id="formulario">
+    <h3 class="text-center text-6xl mb-5 mt-10">
+      <span class="text-clifford" id="formulario_tittle">Formulario</span>
+    </h3>
+    <form class="align-center w-1/2" action="https://formsubmit.co/michelinbriandev@gmail.com" method="POST">
+      <div class="flex flex-wrap -mx-3 mb-6">
+        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="nombre">
+            Nombre
+          </label>
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Nombre">
+          <p class="text-red-500 text-xs italic">Completa este campo.</p>
+        </div>
+        <div class="w-full md:w-1/2 px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="apellido">
+            Apellido
+          </label>
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Apellido">
+        </div>
+      </div>
+      <div class="flex flex-wrap -mx-3 mb-2">
+        <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="ciudad">
+            Ciudad
+          </label>
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Ciudad">
+        </div>
+        <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="prov">
+            Provincia
+          </label>
+          <div class="relative">
+            <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+              <option>CABA</option>
+              <option>BSAS Provincia</option>
+              <option>Resto Pais</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="cp">
+            CP
+          </label>
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="text" placeholder="90210">
+        </div>
+      </div>
+    </div>
+      <button type="submit" class="text-white mt-10 bg-clifford hover:bg-clifford focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-clifford dark:hover:bg-clifford dark:focus:ring-clifford ml-1/2">Enviar</button>
+    </form>
+  </section>
+  <section id="footer">
+<footer class="p-4 bg-white shadow md:px-6 md:py-8 dark:bg-gray-800">
+  <div class="sm:flex sm:items-center sm:justify-between">
+      <a href="https://mizzio.com.ar/" class="flex items-center mb-4 sm:mb-0">
+          <img src="./src/verreIcon.png" class="mr-3 h-8" alt="Flowbite Logo">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">By Mizzio</span>
+      </a>
+      <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+          <li>
+              <a href="#inicio" class="mr-4 hover:underline md:mr-6 ">Inicio</a>
+          </li>
+          <li>
+              <a href="#nosotros" class="mr-4 hover:underline md:mr-6">Nosotros</a>
+          </li>
+          <li>
+              <a href="#menu" class="mr-4 hover:underline md:mr-6 ">Menu</a>
+          </li>
+          <li>
+              <a href="#formulario" class="hover:underline">Formulario</a>
+          </li>
+      </ul>
+  </div>
+  <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+  <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© <span id="setYear"></span><a href="https://mizzio.com.ar/" class="hover:underline">MIZZIO™</a>.
+  </span>
+</footer>
+
+  </section>
 </body>
 <script src="script.js"></script>
 
